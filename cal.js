@@ -13,13 +13,6 @@ let display = document.getElementById('display');
 
         }
 
-        function deletelast(){
-            if (display.innerText !=='0' && display.innerText !=='Error'){
-                currentExpression = currentExpression.slice(0,-1);
-                display.innerText=currentExpression || '0';
-            }
-        }
-
         function calculate() {
             try {
                 display.value = eval(display.value) || '0';
